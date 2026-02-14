@@ -2,22 +2,25 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { motion } from "framer-motion";
-import { cn, showToast } from "@repo/ui/lib/utils";
-import { Twitter } from "@repo/ui/components/icons";
+import { cn } from "@repo/ui/lib/utils";
+import { Linkedin } from "lucide-react";
 import LinkArrow from "./linkArrow";
 
 export function TwitterBorder() {
 	return (
-		// <a href="https://x.com" target="_blank">
-		<a onClick={(showToast)}>
+		<a
+			href="https://www.linkedin.com/company/105248089"
+			target="_blank"
+			rel="noreferrer"
+		>
 			<HoverBorderGradient
 				containerClassName="rounded-full"
 				className="group/anchor z-20 pl-10 pr- flex items-center justify-center gap-4 rounded-full text-white/80 bg-white/5 py-2 text-sm"
 			>
-				<Twitter className="h-4 w-4" />
+				<Linkedin className="h-4 w-4" />
 				<div className="flex items-center justify-center">
 					{" "}
-					Follow us on X{" "}
+					Follow us on LinkedIn{" "}
 					<LinkArrow
 						classname="group-hover/anchor:opacity-100 opacity-0 transition"
 						stroke="#ffffff"
