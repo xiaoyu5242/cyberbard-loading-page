@@ -18,11 +18,11 @@ interface Feature {
 // TODO: This features section will be more for "use-cases"
 const features: Array<Feature> = [
 	{
-		name: "Interactive elements",
+		name: "Smart Exploration",
 		summary:
-			"Locate interface elements using graphic technology.",
+			"Understand your app like a human.",
 		description:
-			"No source code needed—locate interface elements through graphic recognition and operation simulation, closer to real-world scenarios. Unaffected by product adjustments and code changes.",
+			"From navigation to complex interactions, Cyberbard intelligently explores your application's logic and user flows, adapting to changes automatically without needing source code.",
 		image: "asking_questions.png",
 		icon: function ReportingIcon() {
 			let id = useId();
@@ -53,10 +53,10 @@ const features: Array<Feature> = [
 		},
 	},
 	{
-		name: "Test cases",
-		summary: "Maintaining test cases for complex interfaces is a tedious task. Let AI help you improve efficiency.",
+		name: "Automated Test Generation",
+		summary: "Say goodbye to manual test scripts.",
 		description:
-			"Every time the interface changes, do you need to maintain test cases and write test scripts? End the nightmare—let us help you automatically create and maintain them, and even think more comprehensively.",
+			"We automatically generate and maintain test cases based on your website's behavior. No more broken scripts when you update your UI - our tests adapt with you.",
 		image: "asking_questions.png",
 		icon: function InventoryIcon() {
 			return (
@@ -80,9 +80,9 @@ const features: Array<Feature> = [
 		},
 	},
 	{
-		name: "Interaction optimization",
-		summary: "Interact with elements like a human would and find problems.",
-		description: "Identify issues like a real user, including lags and unreasonable interactions. No bugs doesn't mean a happy user.",
+		name: "Fix Bugs Instantly",
+		summary: "Don't just find bugs, fix them.",
+		description: "Cyberbard detects issues and generates ready-to-use code solutions. Simply copy, paste, and your bug is fixed. Quality assurance has never been this easy.",
 		image: "asking_questions.png",
 		icon: function ContactsIcon() {
 			return (
@@ -253,10 +253,10 @@ export function Showcases() {
 						<span className="bg-gradient-to-br sm:text-7xl from-indigo-400 via-indigo-300 to-indigo-700 bg-clip-text text-transparent">
 							Cyberbard <br />
 						</span>{" "}
-						Designed for Automated Functional Testing
+						Designed for Automated Vibe Testing
 					</h2>
 					<p className="mt-4 text-lg tracking-tight text-gray-100">
-						You only need to describe the new features in natural language. We will generate test cases through a dedicated AI model analysis interface, verify them according to the rules, and finally provide you with a clear test report.
+						Simply provide a URL, and our AI model explores your application, generates comprehensive test cases, verification rules, and provides clear quality reports. No coding required.
 					</p>
 					<div className="overflow-x-hidden overflow-y-hidden">
 						<div className="absolute right-0 z-20 top-[0%] h-40 w-[17%] overflow-x-hidden bg-[#369DFD] bg-opacity-20 blur-[110px]" />

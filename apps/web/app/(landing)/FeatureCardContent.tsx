@@ -7,18 +7,18 @@ export default function FUIFeatureSectionWithCards() {
 	const features = [
 		{
 			icon: <BotMessageSquare className="w-5 h-5" />,
-			title: "Intelligent path finding",
-			desc: "Our AI can find the operation path as much as possible based on the natural language description, enter the multi-layer page, and complete the test of the entire function.",
+			title: "Fully Automated Exploration",
+			desc: "Automatically explores your website pages and user flows to understand your product, without needing any source code or manual scripts.",
 		},
 		{
 			icon: <Search className="w-5 h-5" />,
-			title: "Higher coverage",
-			desc: "Take into account every possible user operation and eliminate potential software problems.",
+			title: "Auto Test & Fix",
+			desc: "Automatically generates and runs test cases to identify issues. It even provides ready-to-use code solutions that you can simply copy and paste.",
 		},
 		{
 			icon: <MessageCircle className="w-5 h-5" />,
-			title: "Automatic adaptation",
-			desc: "Button positions changed? No worries — we'll automatically adjust all your test cases. You can focus on iterating your product.",
+			title: "Zero Maintenance",
+			desc: "As your website evolves, our test cases automatically adapt. No more broken scripts or manual updates needed for version changes.",
 		},
 		{
 			icon: (
@@ -31,8 +31,8 @@ export default function FUIFeatureSectionWithCards() {
 					<path d="M13 0H1C.4 0 0 .4 0 1v14c0 .6.4 1 1 1h8l5-5V1c0-.6-.4-1-1-1ZM2 2h10v8H8v4H2V2Z" />
 				</svg>
 			),
-			title: "Convenient editing",
-			desc: "Need to design your own unique test case? No problem, we provide a graphical interface that allows you to quickly adjust elements and paths.",
+			title: "No Experience Needed",
+			desc: "Perfect for Vibe Coding users and non-technical teams. Just enter your website URL, and we handle the entire quality assurance process.",
 		},
 		{
 			icon: (
@@ -45,8 +45,8 @@ export default function FUIFeatureSectionWithCards() {
 					<path d="M14.6.085 8 2.885 1.4.085c-.5-.2-1.4-.1-1.4.9v11c0 .4.2.8.6.9l7 3c.3.1.5.1.8 0l7-3c.4-.2.6-.5.6-.9v-11c0-1-.9-1.1-1.4-.9ZM2 2.485l5 2.1v8.8l-5-2.1v-8.8Zm12 8.8-5 2.1v-8.7l5-2.1v8.7Z" />
 				</svg>
 			),
-			title: "Generate scripts",
-			desc: "Supports exporting scripts in various styles and integrates with existing systems for a seamless experience.",
+			title: "Smart Quality Reports",
+			desc: "Receive comprehensive quality scores and test reports. Easily identify bugs and decide which ones to fix with our actionable insights.",
 		},
 		{
 			icon: (
@@ -59,8 +59,8 @@ export default function FUIFeatureSectionWithCards() {
 					<path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.419a4 4 0 0 0-.885 1.343Z" />
 				</svg>
 			),
-			title: "System Integration",
-			desc: "Cyberbard can run in any CI/CD provider, such as GitHub Actions, GitLab Pipelines, CircleCI, etc.",
+			title: "Vibe Testing Experience",
+			desc: "Whether using AI generation tools or coding manually, get a seamless testing experience designed for modern, high-speed development.",
 		},
 	];
 

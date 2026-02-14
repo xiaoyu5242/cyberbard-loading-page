@@ -39,11 +39,11 @@ const Hero = ({
 					}}
 					className="text-center  mx-auto bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]  bg-clip-text text-4xl tracking-tighter  sm:text-5xl text-transparent md:text-6xl lg:text-7xl"
 				>
-					Do less, automate more<br/>{" "}
+					You Vibe Code,<br/>{" "}
 					<span className="text-transparent bg-clip-text bg-gradient-to-r to-blue-200 from-zinc-300">
 						Cyberbard
 					</span>{" "}
-					test your software effortlessly!
+					Vibe Tests.
 				</motion.h1>
 				<motion.p
 					{...{
@@ -52,15 +52,15 @@ const Hero = ({
 					}}
 					className="text-lg text-center text-soft-foreground-text"
 				>
-					Boost testing efficiency with AI: automatically generate test cases from natural language and seamlessly perform UI and accessibility tests.
+					Whether you use zero-code tools or write code yourself, Cyberbard automatically explores, generates test cases, and verifies your product quality. No experience required.
 				</motion.p>
-				{userName ? (<p className="text-lg bg-gradient-to-br from-indigo-400 via-indigo-300 to-indigo-700 bg-clip-text text-transparent self-center text-center">Welcome back, {userName}!<br />You are already on the waitlist.</p>
+				{userName ? (<p className="text-lg bg-gradient-to-br from-indigo-400 via-indigo-300 to-indigo-700 bg-clip-text text-transparent self-center text-center">Welcome back, {userName}!<br />You are early access member.</p>
 				) : (
 					<Link
 						href="/signin"
 						className="inline-flex text-lg gap-x-2 mt-2 backdrop-blur-md text-white justify-center items-center py-3 px-5 w-fit rounded-3xl border duration-200 group bg-page-gradient border-white/30 text-md font-geistSans hover:border-zinc-600 hover:bg-transparent/10 hover:text-zinc-100"
 					>
-						Join The Waitlist
+						Join Early Access
 						<div className="flex overflow-hidden relative justify-center items-center ml-1 w-5 h-5">
 							<ArrowUpRight className="absolute transition-all duration-500 group-hover:translate-x-4 group-hover:-translate-y-5" />
 							<ArrowUpRight className="absolute transition-all duration-500 -translate-x-4 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0" />

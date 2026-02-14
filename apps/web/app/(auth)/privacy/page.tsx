@@ -1,9 +1,11 @@
 import React from "react";
 import Markdown from "react-markdown";
+import { BackButton } from "../../_components/back-button";
 
 function Page() {
 	return (
 		<div className="flex flex-col items-center justify-center mt-8">
+			<BackButton />
 			<div className="max-w-3xl prose prose-invert">
 				<Markdown>
 					{`

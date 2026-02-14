@@ -39,17 +39,17 @@ const Features = ({
 				<div className="flex relative flex-col px-4 mx-auto max-w-screen-xl md:px-0">
 					<div className="relative mx-auto mb-5 space-y-4 max-w-3xl text-center">
 						<h2 className="pt-16 text-4xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-tr via-white md:text-5xl lg:text-6xl font-nomral font-geist from-zinc-400/50 to-white/60">
-							How AI speeds up your product's time to market.
+							Fully Automated Vibe Testing for Everyone.
 						</h2>
 
 						<p className="text-zinc-400">
-						To maximize your efficiency, we’ll auto-optimize every test step. Leave the repetitive tasks to Cyberbard—just review the final report.
+						Cyberbard automatically explores your site, generates test cases, and finds bugs. It even provides copy-paste solutions. No coding or testing experience needed.
 						</p>
 						{userName ? <br /> : <Link
 							href="/signin"
-							className="mx-auto flex gap-2 justify-center items-center py-2 px-10 mt-4 text-lg tracking-tighter text-center bg-gradient-to-br rounded-md ring-2 ring-offset-1 transition-all hover:ring-transparent group w-fit font-geist bg-page-gradient text-md from-zinc-400 to-zinc-700 text-zinc-50 ring-zinc-500/50 ring-offset-zinc-950/5 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
+							className="mx-auto flex gap-2 justify-center items-center py-2 px-10 mt-4 text-lg tracking-tighter text-center rounded-md ring-2 ring-offset-1 transition-all hover:ring-transparent group w-fit font-geist bg-page-gradient text-md text-zinc-50 ring-zinc-500/50 ring-offset-zinc-950/5 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
 						>
-							Join The Waitlist
+							Join Early Access
 							<div className="overflow-hidden relative ml-1 w-5 h-5">
 								<ArrowUpRight className="absolute transition-all duration-500 group-hover:translate-x-4 group-hover:-translate-y-5" />
 								<ArrowUpRight className="absolute transition-all duration-500 -translate-x-4 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0" />

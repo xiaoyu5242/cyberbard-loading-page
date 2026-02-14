@@ -43,29 +43,29 @@ const SlideTabs = ({
 			<Link href={"/"} className="flex items-start mr-4 opacity-50 h-fit">
 				<Image src={Logo} alt="Cyberbard logo" width={40} height={40} />
 			</Link>
-
-			<Tab key={0} setPosition={setPosition}>
-				<Link className="w-full h-full" href={"/"}>
-					Home
-				</Link>
-			</Tab>
 			<Tab setPosition={setPosition}>
 				<Link className="w-full h-full" href={"/#features"}>
 					Features
 				</Link>
 			</Tab>
-			<Tab setPosition={setPosition}>
-				<a className="w-full h-full" onClick={(showToast)}>
-					Documentation
-				</a>
+
+			<Tab key={0} setPosition={setPosition}>
+				<Link className="w-full h-full" href={"/"}>
+					Prices
+				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
-				<a className="w-full h-full" onClick={(showToast)}>
-					Demo
-				</a>
+				<Link className="w-full h-full" href="https://docs.cyberbard.dev" target="_blank">
+					Docs
+				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
-				<Link className="w-full h-full" href={"/blog"}>
+				<Link className="w-full h-full" href="http://app.cyberbard.dev" target="_blank">
+					App
+				</Link>
+			</Tab>
+			<Tab setPosition={setPosition}>
+				<Link className="w-full h-full" href="https://blog.cyberbard.dev/" target="_blank">
 					Blog
 				</Link>
 			</Tab>

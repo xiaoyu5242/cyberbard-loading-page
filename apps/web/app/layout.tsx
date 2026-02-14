@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { cn } from "@repo/ui/lib/utils";
+import { CookieConsent } from "./_components/cookie-consent";
 import { Toaster } from 'sonner';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,16 +13,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const runtime = "edge";
 
 export const metadata: Metadata = {
-	title: "Cyberbard - The Ultimate AI-Powered Testing Tool You’ve Been Waiting For!",
+	title: "Cyberbard - Automated Vibe Testing for Everyone",
 	description:
-		"Elevate your functional testing with Cyberbard, the cutting-edge AI software that eliminates the need for script writing and test cases. Experience seamless automation as it intelligently mimics real user behavior, delivering unparalleled efficiency and accuracy in your testing process.",
+		"Cyberbard empowers Vibe Coding users with fully automated vibe testing. Automatically explore, test, and fix your web applications without writing a single line of code.",
 	openGraph: {
 		images: [
 			{
 				url: "https://cyberbard.co.uk/og-image.png",
 				width: 1608,
 				height: 500,
-				alt: "Cyberbard - The Ultimate AI-Powered Testing Tool You’ve Been Waiting For!",
+				alt: "Cyberbard - Automated Vibe Testing for Everyone",
 			},
 		],
 	},
@@ -29,17 +30,20 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "https://cyberbard.co.uk",
 		creator: "https://cyberbard.co.uk",
-		title: "Cyberbard - The Ultimate AI-Powered Testing Tool You’ve Been Waiting For!",
+		title: "Cyberbard - Automated Vibe Testing for Everyone",
 		description:
-			"Elevate your functional testing with Cyberbard, the cutting-edge AI software that eliminates the need for script writing and test cases.",
+			"Cyberbard empowers Vibe Coding users with fully automated vibe testing. Automatically explore, test, and fix your web applications without writing a single line of code.",
 		images: [
 			{
 				url: "https://cyberbard.co.uk/og-image.png",
 				width: 1608,
 				height: 500,
-				alt: "Cyberbard - The Ultimate AI-Powered Testing Tool You’ve Been Waiting For!",
+				alt: "Cyberbard - Automated Vibe Testing for Everyone",
 			},
 		],
+	},
+	icons: {
+		icon: "/favicon.ico",
 	},
 };
 
@@ -67,6 +71,7 @@ export default function RootLayout({
 				)}
 			>
 				{children}
+				<CookieConsent />
 				<Toaster />
 			</body>
 		</html>
