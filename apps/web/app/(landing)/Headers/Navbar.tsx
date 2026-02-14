@@ -30,6 +30,15 @@ const SlideTabs = ({
 		opacity: 0,
 	});
 
+	const handlePricesClick = (
+		event: React.MouseEvent<HTMLAnchorElement>
+	) => {
+		event.preventDefault();
+		showToast(
+			"Currently in early access, it is free for now. If we introduce a paid plan, we will notify you by email."
+		);
+	};
+
 	return (
 		<ul
 			onMouseLeave={() => {
@@ -50,7 +59,11 @@ const SlideTabs = ({
 			</Tab>
 
 			<Tab key={0} setPosition={setPosition}>
-				<Link className="w-full h-full" href={"/"}>
+				<Link
+					className="w-full h-full"
+					href={"/"}
+					onClick={handlePricesClick}
+				>
 					Prices
 				</Link>
 			</Tab>
