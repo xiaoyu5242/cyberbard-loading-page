@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { cn } from "@repo/ui/lib/utils";
-import { CookieConsent } from "./_components/cookie-consent";
+import { CookieConsent } from "./_components";
 import { Toaster } from 'sonner';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,13 +13,41 @@ const inter = Inter({ subsets: ["latin"] });
 export const runtime = "edge";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://cyberbard.dev"),
 	title: "Cyberbard - Automated Vibe Testing for Everyone",
 	description:
 		"Cyberbard empowers Vibe Coding users with fully automated vibe testing. Automatically explore, test, and fix your web applications without writing a single line of code.",
+	keywords: [
+		"automated testing",
+		"vibe testing",
+		"QA automation",
+		"web app testing",
+		"bug detection",
+		"bug fixing",
+		"developer tools",
+	],
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+			"max-video-preview": -1,
+		},
+	},
+	alternates: {
+		canonical: "/",
+	},
 	openGraph: {
+		type: "website",
+		url: "https://cyberbard.dev/",
+		siteName: "Cyberbard",
+		locale: "en_GB",
 		images: [
 			{
-				url: "https://cyberbard.co.uk/og-image.png",
+				url: "https://cyberbard.dev/og-image.png",
 				width: 1608,
 				height: 500,
 				alt: "Cyberbard - Automated Vibe Testing for Everyone",
@@ -28,14 +56,14 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		site: "https://cyberbard.co.uk",
-		creator: "https://cyberbard.co.uk",
+		site: "https://cyberbard.dev",
+		creator: "https://cyberbard.dev",
 		title: "Cyberbard - Automated Vibe Testing for Everyone",
 		description:
 			"Cyberbard empowers Vibe Coding users with fully automated vibe testing. Automatically explore, test, and fix your web applications without writing a single line of code.",
 		images: [
 			{
-				url: "https://cyberbard.co.uk/og-image.png",
+				url: "https://cyberbard.dev/og-image.png",
 				width: 1608,
 				height: 500,
 				alt: "Cyberbard - Automated Vibe Testing for Everyone",

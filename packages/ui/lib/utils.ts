@@ -26,9 +26,10 @@ export function formatBytes(
   }`;
 }
 
-export function showToast() {
+export function showToast(message?: string) {
   toast.error(
-    "The function is under construction, please join the waiting list first, and we will update it at any time when there is the latest news."
+    message ??
+      "The function is under construction, please join the waiting list first, and we will update it at any time when there is the latest news."
   );
 }
 

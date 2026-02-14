@@ -57,10 +57,10 @@ const Hero = ({
 				{userName ? (<p className="text-lg bg-gradient-to-br from-indigo-400 via-indigo-300 to-indigo-700 bg-clip-text text-transparent self-center text-center">Welcome back, {userName}!<br />You are early access member.</p>
 				) : (
 					<Link
-						href="/signin"
+						href="http://app.cyberbard.dev"
 						className="inline-flex text-lg gap-x-2 mt-2 backdrop-blur-md text-white justify-center items-center py-3 px-5 w-fit rounded-3xl border duration-200 group bg-page-gradient border-white/30 text-md font-geistSans hover:border-zinc-600 hover:bg-transparent/10 hover:text-zinc-100"
 					>
-						Join Early Access
+						Get Early Access
 						<div className="flex overflow-hidden relative justify-center items-center ml-1 w-5 h-5">
 							<ArrowUpRight className="absolute transition-all duration-500 group-hover:translate-x-4 group-hover:-translate-y-5" />
 							<ArrowUpRight className="absolute transition-all duration-500 -translate-x-4 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0" />

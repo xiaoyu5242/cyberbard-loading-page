@@ -46,10 +46,10 @@ const Features = ({
 						Cyberbard automatically explores your site, generates test cases, and finds bugs. It even provides copy-paste solutions. No coding or testing experience needed.
 						</p>
 						{userName ? <br /> : <Link
-							href="/signin"
+							href="http://app.cyberbard.dev"
 							className="mx-auto flex gap-2 justify-center items-center py-2 px-10 mt-4 text-lg tracking-tighter text-center rounded-md ring-2 ring-offset-1 transition-all hover:ring-transparent group w-fit font-geist bg-page-gradient text-md text-zinc-50 ring-zinc-500/50 ring-offset-zinc-950/5 hover:scale-[1.02] active:scale-[0.98] active:ring-zinc-500/70"
 						>
-							Join Early Access
+							Get Early Access
 							<div className="overflow-hidden relative ml-1 w-5 h-5">
 								<ArrowUpRight className="absolute transition-all duration-500 group-hover:translate-x-4 group-hover:-translate-y-5" />
 								<ArrowUpRight className="absolute transition-all duration-500 -translate-x-4 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0" />

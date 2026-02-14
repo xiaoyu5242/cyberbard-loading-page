@@ -86,7 +86,7 @@ const Services = () => {
 								</p>
 								<a
 									href="/signin"
-									className="inline-flex justify-center items-center py-4 px-10 w-full text-center bg-transparent bg-gradient-to-tr to-transparent rounded-xl transition-colors sm:w-auto mt-[-20px] bg-glass-gradient group from-zinc-300/5 via-gray-400/5 border-white/10 border-[1px] hover:bg-transparent/10"
+									className="inline-flex justify-center items-center py-4 px-10 w-full text-center bg-transparent to-transparent rounded-xl transition-colors sm:w-auto mt-[-20px] group from-zinc-300/5 via-gray-400/5 border-white/10 border-[1px] hover:bg-transparent/10"
 								>
 									Get started
 									<ChevronRight className="ml-2 w-4 h-4 duration-300 group-hover:translate-x-1" />
@@ -158,7 +158,7 @@ const Services = () => {
 							</p>
 							<a
 								href="#"
-								className="inline-flex gap-x-1 justify-center items-center py-4 px-10 text-center bg-transparent bg-gradient-to-tr to-transparent rounded-xl transition-colors sm:w-auto w-fit mt-[-20px] bg-glass-gradient group from-zinc-300/5 via-gray-400/5 border-white/10 border-[1px] hover:bg-transparent/10"
+								className="inline-flex gap-x-1 justify-center items-center py-4 px-10 text-center bg-transparent to-transparent rounded-xl transition-colors sm:w-auto w-fit mt-[-20px] bg-glass-gradient group from-zinc-300/5 via-gray-400/5 border-white/10 border-[1px] hover:bg-transparent/10"
 							>
 								<GithubIcon className="inline-flex justify-center items-center w-5 h-5" />{" "}
 								Star us on Github

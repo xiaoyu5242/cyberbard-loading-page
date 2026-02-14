@@ -73,11 +73,6 @@ const SlideTabs = ({
 				</Link>
 			</Tab>
 			<Tab setPosition={setPosition}>
-				<Link className="w-full h-full" href="http://app.cyberbard.dev" target="_blank">
-					App
-				</Link>
-			</Tab>
-			<Tab setPosition={setPosition}>
 				<Link className="w-full h-full" href="https://blog.cyberbard.dev/" target="_blank">
 					Blog
 				</Link>

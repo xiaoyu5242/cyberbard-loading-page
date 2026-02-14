@@ -15,7 +15,7 @@ We'd love to hear from you! Whether you have a question about our features, pric
 
 ### Cyberbard LTD
 
-**Email:** [support@cyberbard.co.uk](mailto:support@cyberbard.co.uk)
+**Email:** [support@cyberbard.dev](mailto:support@cyberbard.dev)
 
 `}
 				</Markdown>

@@ -36,16 +36,16 @@ const Cta = ({
 				Vibe Test it with<br />Cyberbard
 			</h1>
 			<p className="z-20 text-center text-md md:text-lg">
-				Experience the future of automated quality assurance today.
+				Shape the future of automated quality assurance with us.
 			</p>
 			<div className="w-fit  mx-auto">
 				{userName ? <br /> :
 					<Link
-						href="/signin"
+						href="http://app.cyberbard.dev"
 						className="flex mx-auto w-fit gap-x-2 justify-center items-center py-3 px-5 ml-3  rounded-3xl border duration-200 group bg-page-gradient border-white/30 text-md font-geistSans hover:border-zinc-600 hover:bg-transparent/10 hover:text-zinc-100 text-white z-[1] relative"
 					>
 
-						Join Early Access
+						Get Early Access
 						<div className="flex overflow-hidden relative justify-center items-center ml-1 w-5 h-5">
 							<ArrowUpRight className="absolute transition-all duration-500 group-hover:translate-x-4 group-hover:-translate-y-5" />
 							<ArrowUpRight className="absolute transition-all duration-500 -translate-x-4 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0" />

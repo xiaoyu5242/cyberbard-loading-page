@@ -43,7 +43,7 @@ Cyberbard is provided "as is" without any warranties of any kind. We do not guar
 We may update these Terms of Service from time to time. We will notify you of any changes by posting the new terms on our app. Your continued use of the app after such changes constitutes your acceptance of the new terms.
 
 ### 9. Contact Information
-If you have any questions about these Terms of Service, please contact us at support@Cyberbard.co.uk .
+If you have any questions about these Terms of Service, please contact us at support@cyberbard.dev .
 
 **By using Cyberbard, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.**
 `}

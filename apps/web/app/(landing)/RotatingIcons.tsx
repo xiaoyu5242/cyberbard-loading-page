@@ -13,22 +13,19 @@ import Image from "next/image";
 
 const icons = [
 	<div className="rounded-full bg-purple-600/20 p-4">
-		<Github className="h-8 w-8 text-purple-500" />
+		<Image src="/icons/lovable.svg" alt="Lovable" width={32} height={32} className="h-8 w-8 brightness-0 invert opacity-90 scale-[0.8]" />
 	</div>,
 	<div className="rounded-full bg-blue-800/20 p-4">
-		<Twitter className="h-8 w-8 text-blue-500" />
+		<Image src="/icons/rocket.svg" alt="Rocket" width={32} height={32} className="h-8 w-8 brightness-0 invert opacity-90 scale-[0.8]" />
 	</div>,
 	<div className="rounded-full bg-green-800/20 p-4">
-		<Bamboo className="h-8 w-8 text-green-500" />
+		<Image src="/icons/base44.svg" alt="Base44" width={32} height={32} className="h-8 w-8 brightness-0 invert opacity-90 scale-[0.8]" />
 	</div>,
 	<div className="rounded-full bg-red-800/20 p-4">
-		<Gitlab className="h-8 w-8 text-red-500" />
-	</div>,
-	<div className="rounded-full bg-white/20 p-4">
-		<Jenkins className="h-8 w-8 text-white" />
+		<Image src="/icons/replit.svg" alt="Replit" width={32} height={32} className="h-8 w-8 brightness-0 invert opacity-90 scale-[0.8]" />
 	</div>,
 	<div className="rounded-full bg-yellow-700/20 p-4">
-		<Travis className="h-8 w-8 text-white" />
+		<Image src="/icons/cursor.svg" alt="Cursor" width={32} height={32} className="h-8 w-8 brightness-0 invert opacity-90 scale-[0.8]" />
 	</div>,
 ];
 
@@ -95,8 +92,8 @@ const RotatingIcons: React.FC = () => {
 					</div>
 				</div>
 			</div>
-			<p className="text-center text-sm text-zinc-500">
-				Seamlessly integrate with your existing system for minimal changes and maximum impact
+			<p className="text-center text-lg text-zinc-500">
+				We are adapting to these platforms, and we need your help to keep improving.
 			</p>
 		</div>
 	);

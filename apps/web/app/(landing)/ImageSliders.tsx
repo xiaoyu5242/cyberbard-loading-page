@@ -150,34 +150,32 @@ const MediumText = ({ className }: { className?: string }) => {
 };
 const logos = [
 	{
-		name: "Github",
-		url: <Github className="w-32 brightness-100 invert-1 mx-5 grayscale" key="Github" />,
+		name: "Lovable",
+		url: <Image src="/icons/lovable.svg" alt="Lovable" width={96} height={64} className="h-16 w-auto brightness-0 invert mx-5 grayscale opacity-50 scale-[0.8]" key="Lovable" />,
 	},
 	{
-		name: "Jenkins",
-		url: <Jenkins className="w-24 h-24 brightness-100 invert-1 mx-5 grayscale" key="Medium" />,
+		name: "Rocket",
+		url: <Image src="/icons/rocket.svg" alt="Rocket" width={96} height={96} className="h-24 w-auto brightness-0 invert mx-5 grayscale opacity-50 scale-[0.8]" key="Rocket" />,
 	},
 	{
-		name: "Travis",
-		url: <Travis className="w-24 h-24 brightness-100 invert-1 mx-5 grayscale" key="Travis" />,
+		name: "Base44",
+		url: <Image src="/icons/base44.svg" alt="Base44" width={96} height={96} className="h-20 w-auto brightness-0 invert mx-5 grayscale opacity-50 scale-[0.8]" key="Base44" />,
 	},
 	{
-		name: "Reddit",
-		url: (
-			<Gitlab className="w-24 h-16 brightness-100 invert-1 mx-5 grayscale" key="Reddit" />
-		),
+		name: "Replit",
+		url: <Image src="/icons/replit.svg" alt="Replit" width={96} height={96} className="h-20 w-auto brightness-0 invert mx-5 grayscale opacity-50 scale-[0.8]" key="Replit" />,
 	},
 	{
-		name: "TwittBambooer",
-		url: <Bamboo className="w-24 h-16 brightness-100 invert-1 mx-5 grayscale" key="Bamboo" />,
+		name: "Cursor",
+		url: <Image src="/icons/cursor.svg" alt="Cursor" width={96} height={96} className="h-20 w-auto brightness-0 invert mx-5 grayscale opacity-50 scale-[0.8]" key="Cursor" />,
 	},
 ];
 
 const AnimatedLogoCloud = () => {
 	return (
 		<div className="py-2 w-9/12 scale-75">
-			<p className="font-normal tracking-tighter text-base text-gray-100 bg-gradient-to-br from-zinc-400 via-zinc-300 to-zinc-700 bg-clip-text text-transparent text-center mt-4 items-center">
-				Seamlessly integrate with your existing system for minimal changes and maximum impact.
+			<p className="font-normal tracking-tighter text-xl text-gray-100 bg-gradient-to-br from-zinc-400 via-zinc-300 to-zinc-700 bg-clip-text text-transparent text-center mt-4 items-center">
+				We are adapting to these platforms, and we need your help to keep improving.
 			</p>
 			{/* <hr className="h-[0.1px]  relative bg-white/10" /> */}
 

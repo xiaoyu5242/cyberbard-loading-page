@@ -1,6 +1,6 @@
 "use client";
 
-import { useId } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import Image, { type ImageProps } from "next/image";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import clsx from "clsx";
@@ -106,10 +106,12 @@ function Feature({
 	feature,
 	isActive,
 	className,
+	onUserInteraction,
 	...props
 }: React.ComponentPropsWithoutRef<"div"> & {
 	feature: Feature;
 	isActive: boolean;
+	onUserInteraction?: () => void;
 }) {
 	return (
 		<div
@@ -118,6 +120,7 @@ function Feature({
 				"focus:outline-none",
 				!isActive && "opacity-75 hover:opacity-100",
 			)}
+			onPointerDown={onUserInteraction}
 			{...props}
 		>
 			<div
@@ -170,8 +173,42 @@ function FeaturesMobile() {
 }
 
 function FeaturesDesktop() {
+	const rotationMs = 2000;
+	const [selectedIndex, setSelectedIndex] = useState(0);
+	const [isAutoRotate, setIsAutoRotate] = useState(true);
+	const isAutoChangeRef = useRef(false);
+	const handleUserInteraction = () => {
+		setIsAutoRotate(false);
+	};
+
+	useEffect(() => {
+		if (!isAutoRotate) {
+			return;
+		}
+
+		const intervalId = window.setInterval(() => {
+			isAutoChangeRef.current = true;
+			setSelectedIndex((current) => (current + 1) % features.length);
+		}, rotationMs);
+
+		return () => window.clearInterval(intervalId);
+	}, [isAutoRotate, rotationMs]);
+
 	return (
-		<TabGroup className="hidden lg:mt-20 lg:block">
+		<TabGroup
+			className="hidden lg:mt-20 lg:block"
+			selectedIndex={selectedIndex}
+			onChange={(index) => {
+				if (isAutoChangeRef.current) {
+					isAutoChangeRef.current = false;
+					setSelectedIndex(index);
+					return;
+				}
+
+				setIsAutoRotate(false);
+				setSelectedIndex(index);
+			}}
+		>
 			{({ selectedIndex }) => (
 				<>
 					<TabList className="grid grid-cols-3 gap-x-8">
@@ -181,7 +218,7 @@ function FeaturesDesktop() {
 								feature={{
 									...feature,
 									name: (
-										<Tab className="ui-not-focus-visible:outline-none">
+										<Tab className="outline-none focus:outline-none focus-visible:outline-none ui-not-focus-visible:outline-none">
 											<span className="absolute inset-0" />
 											{feature.name}
 										</Tab>
@@ -189,6 +226,7 @@ function FeaturesDesktop() {
 								}}
 								isActive={featureIndex === selectedIndex}
 								className="relative"
+								onUserInteraction={handleUserInteraction}
 							/>
 						))}
 					</TabList>

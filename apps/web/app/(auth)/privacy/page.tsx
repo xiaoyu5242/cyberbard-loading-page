@@ -19,7 +19,7 @@ This Privacy Policy applies to all software, websites, mobile applications, and 
 If you wish to delete your account and all associated data, please follow these steps:
 
 1. Cancel any active subscriptions (if applicable) via the app store.
-2. Email us at support@cyberbard.co.uk from the email address linked to your account. Clearly state your request to delete your account and include the app name.
+2. Email us at support@cyberbard.dev from the email address linked to your account. Clearly state your request to delete your account and include the app name.
    >  Note: We currently only support full deletion of all your data.
 3. We will process your request and notify you via email once the deletion is complete.
 4. Finally, you may uninstall the app from your device.
@@ -84,7 +84,7 @@ Cyberbard reserves the right to update this privacy policy at any time. When we 
 # Contact Us
 If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:
 
-Email: support@Cyberbard.co.uk
+Email: support@cyberbard.dev
 This document was last updated on August 9, 2024.
 
 `}
